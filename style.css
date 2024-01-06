@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color:aliceblue;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav_left {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav_right {
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+}
+
+.nav_image {
+    display: inline-flex;
+    width: 13%;
+    /* height: 20%; */
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:darkblue;
+    font-size: larger;
+}
+.nav_links:hover{
+    text-decoration: underline;
+}
+
+main{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.changing_images{
+    height: 50vh;
+    width: 100%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: aliceblue;
+    background-image: url(UsedIn/image1.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(UsedIn/image1.jpg);
+    }
+    20%{
+        background-image: url(UsedIn/image2.jpg);
+    }
+    40%{
+        background-image: url(UsedIn/image3.jpg);
+    }
+    60%{
+        background-image: url(UsedIn/image4.jpg);
+    }
+    80%{
+        background-image: url(UsedIn/image1.jpg);
+    }
+    100%{
+        background-image: url(UsedIn/image2.jpg);
+    }
+}
+
+.contact-info{
+    margin-top: 31%;
+    display: block;
+    background-color: aliceblue;
+    color: darkblue;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linkedin-link{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.linkedin-link:hover{
+    text-decoration: underline;
+}
+
+.latest_happenings{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heading{
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    text-decoration: underline;
+    cursor:default;
+    color:rgb(0, 144, 192);
+}
+
+.img_on_left{
+    height: 30vh;
+    width: 50%;
+    margin-bottom: 1%;
+    background-size: cover;
+    background-image: url(UsedIn/entrance.jpg);
+}
+
+.main_content{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+    
+}
+
+.main_content_link{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: rgb(0, 144, 192);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main_content_link:hover{
+    text-decoration: underline;
+    color: darkblue;
+}
+
+.content_on_right{
+    height: 20vh;
+}
+
+.news{
+    height: min-content;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    text-align: left;
+}
+
+.news_heading{
+    text-decoration: underline;
+    margin-bottom: 1%;
+    color: darkblue;
+}
+
+.main_photos{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.photo1{
+    margin: 2%;
+    background-image: url(UsedIn/onTimeFulfilments.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 60vh;
+    border-radius: 8px;
+}
+
+.photo2{
+    margin: 2%;
+    background-image: url(UsedIn/happyCustomers.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 60vh;
+    border-radius: 8px;
+}
+
+.photo3{
+    margin: 2%;
+    background-image: url(UsedIn/Teamwork.jpg);
+    background-size: cover;
+    width: 30%;
+    height: 60vh;
+    border-radius: 8px;
+}
+
+.text_on_pic{
+    display: block;
+    text-align: center;
+    color: white;
+    text-align: center;
+    margin-top: 130%;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration:underline;
+}
+
+.photo1:hover{
+    width: 35%;
+    height: 70vh;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.photo2:hover{
+    width: 35%;
+    height: 70vh;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+.photo3:hover{
+    width: 35%;
+    height: 70vh;
+    transition-duration: 500ms;
+    cursor: pointer;
+}
+
+
+.parent{
+    width: 100%;
+}
+
+.social_media_bar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 8%;
+    
+    background-color:lightblue;
+}
+
+.social_media_link_images{
+    width: 35px;
+}
+
+.individual_link{
+    display: flex;
+    align-items: center;
+    margin: 1%;
+}
+
+.SML{
+    font-size: large;
+    color: darkblue;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.SML:hover{
+    font-size: x-large;
+    text-decoration: underline;
+    transition-duration: 200ms;
+}
+
+.footer_end{
+    background-color: rgb(238, 238, 238);
+}
+
+.footer_end_content{
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    justify-content: space-around;
+}
+
+.footer_div_1{
+    display: flex;
+    flex-direction: column;
+    margin: 1% ;
+}
+
+.footer_div_2{
+    display: flex;
+    flex-direction: column;
+    margin: 1% ;
+
+}
+
+.footer_links{
+    text-decoration: none;
+    color: gray;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin: 1%;
+}
+
+.footer_links:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width:786px){
+
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        background-color:aliceblue;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        }
+    
+    .contact-info{
+        background: rgba(240, 248, 255, 0.616);
+        
+    }
+
+    .nav_image{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%;
+        text-align: center;
+    }
+
+    .nav_right{
+        display: none;
+    }
+
+    .main_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_on_left{
+        width: 100%;
+    }
+
+    .news_heading{
+        display: flex;
+        justify-content: center;
+    }
+
+    .content_on_right{
+        height: 100%;
+        text-align: center;
+    }
+
+    .main_photos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news_para{
+        text-align: center;
+    }
+
+    .main_photos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo1{
+        width: 100%;
+    }
+    .photo1:hover{
+        width: 100%;
+    }
+
+    .photo2{
+        width: 100%;
+    }
+    .photo2:hover{
+        width: 100%;
+    }
+    .photo3{
+        width: 100%;
+    }
+    .photo3:hover{
+        width: 100%;
+    }
+    .parent{
+        width: 100%;
+    }
+
+    .social_media_link_images{
+        width: 30px;
+    }
+
+    .SML{
+        font-size: small;
+    }
+
+    .footer_div_2{
+        font-size: small;
+    }
+
+    .footer_links{
+        text-decoration: underline;
+    }
+    .SML:hover{
+        font-size: small;
+    }
+    }

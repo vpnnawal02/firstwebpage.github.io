@@ -1,0 +1,1 @@
+The Navbar will be having [Home] [News] [Media] [Contact Us] and [Jobs] button and a Company logo on the left.
